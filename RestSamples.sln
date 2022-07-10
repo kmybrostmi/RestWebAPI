@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSamples.Model", "RestSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSamples.ConsoleApp", "RestSamples.ConsoleApp\RestSamples.ConsoleApp.csproj", "{B5FDE7F4-89EA-4AAC-8D22-A9CB79EC9864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSamples.SimpleApi", "RestSamples.SimpleApi\RestSamples.SimpleApi.csproj", "{F008B966-3FD4-41E6-98DC-EF7947BAB3CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B5FDE7F4-89EA-4AAC-8D22-A9CB79EC9864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5FDE7F4-89EA-4AAC-8D22-A9CB79EC9864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5FDE7F4-89EA-4AAC-8D22-A9CB79EC9864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F008B966-3FD4-41E6-98DC-EF7947BAB3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F008B966-3FD4-41E6-98DC-EF7947BAB3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F008B966-3FD4-41E6-98DC-EF7947BAB3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F008B966-3FD4-41E6-98DC-EF7947BAB3CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
