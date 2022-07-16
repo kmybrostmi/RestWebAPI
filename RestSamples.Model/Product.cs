@@ -1,4 +1,6 @@
-﻿namespace RestSamples.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace RestSamples.Model
 {
     public class Product
     {

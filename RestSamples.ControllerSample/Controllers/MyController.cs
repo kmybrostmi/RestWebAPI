@@ -39,7 +39,7 @@ namespace RestSamples.ControllerSample.Controllers
         //}
 
         [HttpPost]
-        public IActionResult AddUser9([FromServices]ProductDbContext context)
+        public IActionResult AddUser9([FromServices] ProductDbContext context)
         {
             return Ok();
         }
@@ -52,11 +52,27 @@ namespace RestSamples.ControllerSample.Controllers
             {
                 return NotFound();
             }
-            return Ok(product); 
+            return Ok(product);
+        }
+
+        [HttpGet("GetProduct/{id}")]
+        public async Task<IActionResult> GetProduct2(int id)
+        {
+            var product = context.Products.Where(c => c.Id == id).FirstOrDefault();
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
+
+        [HttpGet("{Google}")]
+        public async Task<IActionResult> Redirect()
+        {
+            return Redirect("");
         }
     }
 }
-
 
 
 
