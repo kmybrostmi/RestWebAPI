@@ -45,9 +45,6 @@ app.MapGet("/GetProductList", async (HttpContext context, ProductDbContext produ
 
     return Results.Ok(productList);
 });
-
-
-
 app.Run();
 
 internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
