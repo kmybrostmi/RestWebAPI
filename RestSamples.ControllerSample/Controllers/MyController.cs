@@ -17,6 +17,25 @@ namespace RestSamples.ControllerSample.Controllers
         {
             return "Hi2";
         }
+
+        //[HttpPost]
+        //public ViewResult AddUser()
+        //{
+        //    return "Hi2";
+        //}
+
+
+        //[HttpPost]
+        //public NotFoundResult AddUser2()
+        //{
+        //    return "Hi2";
+        //}
+
+        [HttpPost]
+        public IActionResult AddUser9()
+        {
+            return Ok();
+        }
     }
 }
 
