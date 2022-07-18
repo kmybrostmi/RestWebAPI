@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using RestSamples.Model;
 
@@ -70,6 +71,18 @@ namespace RestSamples.ControllerSample.Controllers
         public async Task<IActionResult> Redirect()
         {
             return Redirect("");
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<Product> PathProduct(long id , JsonPatchDocument<Product> patchDocument)
+        {
+            Product p = await context.Products.FindAsync(id);
+            if (p != null)
+            {
+                patchDocument.ApplyTo(p);
+                await context.SaveChangesAsync();
+            }
+            return p;
         }
     }
 }
